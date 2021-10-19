@@ -54,8 +54,8 @@ public class Core {
           jogo.count++;
           Jogador jogador = jogo.getJogadores().get(comando[2]);
           jogador.addPosicao();
-//          if (jogador.getPosicao() <= 9) { CODIGO MODIFICADO PARA APRESENTACAO
-          if (jogador.getPosicao() <= 3) {
+          if (jogador.getPosicao() <= 9) {// CODIGO MODIFICADO PARA APRESENTACAO
+//          if (jogador.getPosicao() <= 3) {
             jogo.sendMessageToAllPlayers("hit;" + comando[2]);
             if (jogo.count == jogo.getJogadores().size()) {
               jogo.count = 0;
